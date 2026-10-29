@@ -1,0 +1,5 @@
+# Student-specific local directories
+Yashvi - Module 1/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc

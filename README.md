@@ -7,18 +7,38 @@
 | Academic Details | Information |
 | :--- | :--- |
 | **Course** | Soft Computing |
-| **Module** | Module II: Fuzzy Logic and Systems |
 | **Student Name** | *Aakash Sarang* |
 | **Enrollment No.** | *2023BTCSE001* |
 | **Academic Session** | 2026 – 2027 |
 
 ---
 
-## Assignment 2 - Module II: Practical Exercises
+## Assignment 1 - Module I: Practical Exercises (Fuzzy Logic and Systems)
+
+This repository contains the practical implementations for the 10 assignments of Module I:
+
+### List of Practicals (Module I)
+
+| # | Notebook Link | Exact Aim | Key Concepts & Formulas |
+| :---: | :--- | :--- | :--- |
+| **01** | [practical1.ipynb](Module%201/practical1.ipynb) | To create and visualize simple fuzzy sets in Python using membership values. | $\mu_A(x) \in [0, 1]$, Core, Support, $\alpha$-Cut $A_\alpha = \{x \mid \mu_A(x) \ge \alpha\}$ |
+| **02** | [practical2.ipynb](Module%201/practical2.ipynb) | To create and plot Triangular, Trapezoidal, and Gaussian membership functions using Python and scikit-fuzzy. | $\text{trimf}(x; a, b, c)$, $\text{trapmf}(x; a, b, c, d)$, $\text{gaussmf}(x; m, \sigma)$ |
+| **03** | [practical3.ipynb](Module%201/practical3.ipynb) | To perform basic fuzzy set operations such as Union, Intersection, and Complement using Python. | $\mu_{A \cup B} = \max(\mu_A, \mu_B)$, $\mu_{A \cap B} = \min(\mu_A, \mu_B)$, $\mu_{\overline{A}} = 1 - \mu_A$ |
+| **04** | [practical4.ipynb](Module%201/practical4.ipynb) | To create and display a simple fuzzy relation between two fuzzy sets using Python. | Min Cartesian Product $R(x, y) = \min(\mu_A, \mu_B)$, Max-Min Composition $R \circ S$ |
+| **05** | [practical5.ipynb](Module%201/practical5.ipynb) | To create fuzzy linguistic variables such as Low, Medium, and High using membership functions in Python. | Linguistic Quintuple $(X, T(X), U, G, M)$, Fuzzification Vector $\mathbf{\mu}(x) = [\mu_{\text{Low}}, \mu_{\text{Med}}, \mu_{\text{High}}]$ |
+| **06** | [practical6.ipynb](Module%201/practical6.ipynb) | To create simple Fuzzy IF–THEN rules for making decisions based on given input conditions. | Antecedent evaluation (Min/Max), Firing strength $w_i$, Mamdani clipping, Max aggregation |
+| **07** | [practical7.ipynb](Module%201/practical7.ipynb) | To implement a simple Mamdani Fuzzy Inference System using Python and scikit-fuzzy. | `skfuzzy.control` Antecedent, Consequent, Rule Base, Centroid Defuzzification |
+| **08** | [practical8.ipynb](Module%201/practical8.ipynb) | To implement a simple Sugeno Fuzzy Inference System using Python. | Zero-Order Sugeno FIS, Crisp singleton consequents, Weighted Average $z^* = \frac{\sum w_i z_i}{\sum w_i}$ |
+| **09** | [practical9.ipynb](Module%201/practical9.ipynb) | To apply and compare basic defuzzification methods such as Centroid, Bisector, and Mean of Maximum using Python. | Centroid (COG), Bisector (Equal Area), Mean of Max (MOM), Smallest of Max (SOM), Largest of Max (LOM) |
+| **10** | [practical10.ipynb](Module%201/practical10.ipynb) | To design a simple Fuzzy Logic Controller using Python and scikit-fuzzy by combining membership functions, fuzzy rules, fuzzy inference, and defuzzification. | Closed-loop feedback FLC: Error $e$, Rate of Change $\Delta e$, 9-rule matrix, Centroid Defuzzification, Closed-loop dynamics |
+
+---
+
+## Assignment 2 - Module II: Practical Exercises (Neural Networks and Deep Learning)
 
 This repository contains the practical implementations for the 10 assignments of Module II:
 
-### List of Practicals
+### List of Practicals (Module II)
 
 | # | Notebook Link | Exact Aim | Key Concepts & Formulas |
 | :---: | :--- | :--- | :--- |
@@ -37,6 +57,7 @@ This repository contains the practical implementations for the 10 assignments of
 
 ### Software & Environment
 - **Python:** 3.13
+- **Fuzzy Logic:** scikit-fuzzy (`skfuzzy`)
 - **Deep Learning:** TensorFlow 2.20 / Keras
 - **Scientific Computing:** NumPy, Scikit-Learn
 - **Plotting:** Matplotlib, Seaborn
